@@ -1,0 +1,46 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.3
+  Exclude:
+    - "bin/**/*"
+    - "db/**/*"
+    - "test/**/*"
+    - "spec/**/*"
+    - "vendor/**/*"
+    - "config/*"
+    - "**/*.rake"
+    - "config.ru"
+    - "node_modules/**/*"
+    - "tmp/**/*"
+    - ".git/**/*"
+    - "server/**/*"
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: true
+  Max: 20
+
+Metrics/BlockLength:
+  Enabled: true
+  Max: 30
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - remote
