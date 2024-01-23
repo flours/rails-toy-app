@@ -6,7 +6,6 @@ env:
 jobs:
   check-style:
     name: check-style
-    needs: initialize
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
