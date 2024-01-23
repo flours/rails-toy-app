@@ -8,10 +8,9 @@ ruby '3.3.0'
 gem 'rails', '~> 7.1.3'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+gem 'cssbundling-rails'
+gem 'jsbundling-rails'
 gem 'sprockets-rails'
-gem "jsbundling-rails"
-gem "cssbundling-rails"
-
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
